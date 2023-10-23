@@ -1,0 +1,13 @@
+name: Print working directory
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print working directory
+        run: echo "Working directory: $GITHUB_WORKSPACE"
